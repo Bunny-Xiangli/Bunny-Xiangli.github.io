@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>https://bunny-xiangli.github.io/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2021 20:56:13 +0800</lastBuildDate><atom:link href="https://bunny-xiangli.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building up a website by using Hugo and GitHub</title>
+      <link>https://bunny-xiangli.github.io/2021/01/building-up-a-website-by-using-hugo-and-github/</link>
+      <pubDate>Sat, 16 Jan 2021 20:56:13 +0800</pubDate>
+      
+      <guid>https://bunny-xiangli.github.io/2021/01/building-up-a-website-by-using-hugo-and-github/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Table of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#preparing-hugo-to-generate-a-local-website&#34;&gt;Preparing Hugo to generate a local website&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#downloading-hugo&#34;&gt;Downloading Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#installing-hugo&#34;&gt;Installing Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-a-new-site&#34;&gt;Creating a new site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#adding-a-theme&#34;&gt;Adding a theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#preparing-markdown-files&#34;&gt;Preparing Markdown files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#generating-a-local-website&#34;&gt;Generating a local website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#preparing-github&#34;&gt;Preparing GitHub&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-a-new-repository-in-github&#34;&gt;Creating a new repository in GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#installing-git&#34;&gt;Installing Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configuring-ssh-key-in-github&#34;&gt;Configuring SSH key in GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#building-up-an-online-website&#34;&gt;Building up an online website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can do the following instructions to build up a website by using Hugo and GitHub with Markdown files.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-hugo-to-generate-a-local-website&#34;&gt;Preparing Hugo to generate a local website&lt;/h2&gt;
+&lt;p&gt;You need to download and install Hugo, create a new website, and then add a theme. Afterwards, you can generate a local website with Markdown files.&lt;/p&gt;
+&lt;h4 id=&#34;downloading-hugo&#34;&gt;Downloading Hugo&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt; and click &lt;strong&gt;Quick Start&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;install&lt;/strong&gt; hyperlink to navigate to the &lt;strong&gt;Install Hugo&lt;/strong&gt; page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Hugo Releases&lt;/strong&gt; hyperlink to navigate to the GitHub page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scroll down to the &lt;strong&gt;Assets&lt;/strong&gt; area to find the Hugo installation package for your computer.&lt;/p&gt;
+&lt;p&gt;For example, the Hugo installation package for 64-bit Windows operating system:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/hugo-for-Windows-64-bit.png&#34; alt=&#34;hugo for Windows 64-bit&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save the downloaded ZIP file and un-zip the file in your local computer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the Hugo installation package folder and you can see the following three files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/3-hugo-files.png&#34; alt=&#34;3 hugo files&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the &lt;em&gt;hugo.exe&lt;/em&gt; file to a newly created folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Do not use space or non-English language words in the folder name or the upper level folders. For example, you can create a new folder as &lt;em&gt;D:\Hugo\bin&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the computer &lt;strong&gt;cmd&lt;/strong&gt; command panel and navigate to the new folder you just created.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type &lt;strong&gt;hugo&lt;/strong&gt; in the &lt;strong&gt;cmd&lt;/strong&gt; command line and press &lt;strong&gt;Enter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;You may see the following error message and you can ignore it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Error: Unable to locate config file or config directory. Perhaps you need to create a new site. Run &amp;quot;hugo help new&amp;quot; for details.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable by adding the path of the new folder where the &lt;em&gt;hugo.exe&lt;/em&gt; file exists.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To verify hugo installation, open a new &lt;strong&gt;cmd&lt;/strong&gt; command panel and type &lt;strong&gt;hugo version&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;Hugo version is displayed. It means that Hugo is installed successfully.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;creating-a-new-site&#34;&gt;Creating a new site&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the computer &lt;strong&gt;cmd&lt;/strong&gt; command panel and navigate to the new folder containing the &lt;em&gt;hugo.exe&lt;/em&gt; file. For example,  &lt;em&gt;D:\Hugo\bin&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To create a new site, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site your-new-site-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site DocWeb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;A new folder named as &lt;em&gt;your-new-site-name&lt;/em&gt; (for example, &lt;em&gt;DocWeb&lt;/em&gt;) is created, with multiple folders and files inside.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;adding-a-theme&#34;&gt;Adding a theme&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt; to find a theme you like.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the theme to download a ZIP file to your local computer, and un-zip the theme ZIP file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the theme file to the &lt;strong&gt;themes&lt;/strong&gt; folder which is created in &lt;a href=&#34;#creating-a-new-site&#34;&gt;Creating a new site&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To use the theme format, copy three items (&lt;em&gt;content&lt;/em&gt;, &lt;em&gt;static&lt;/em&gt; and &lt;em&gt;config.toml&lt;/em&gt;) in the &lt;strong&gt;exampleSite&lt;/strong&gt; folder of the &lt;strong&gt;themes&lt;/strong&gt; folder, and overwrite the three same items in the upper level folder which is rooted under your new site folder.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/copying-theme-files.png&#34; alt=&#34;copying theme files&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;preparing-markdown-files&#34;&gt;Preparing Markdown files&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;strong&gt;content&lt;/strong&gt; folder which is rooted under your new site folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit the Markdown files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: You can edit Markdown files by checking the instructions in &lt;a href=&#34;https://www.jianshu.com/p/191d1e21f7ed/&#34;&gt;Markdown instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;generating-a-local-website&#34;&gt;Generating a local website&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the computer &lt;strong&gt;cmd&lt;/strong&gt; command panel and navigate to the new folder containing the &lt;em&gt;hugo.exe&lt;/em&gt; file. For example,  &lt;em&gt;D:\Hugo\bin&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type the command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;You can view your website through &lt;a href=&#34;localhost:1313&#34;&gt;localhost:1313&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;preparing-github&#34;&gt;Preparing GitHub&lt;/h2&gt;
+&lt;p&gt;You need to create a new repository in GitHub, install Git and configure SSH key in GitHub.&lt;/p&gt;
+&lt;h4 id=&#34;creating-a-new-repository-in-github&#34;&gt;Creating a new repository in GitHub&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt; to register a new GitHub account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new repository.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Your repository name must follow the format as &amp;ldquo;your-account-name.github.io&amp;rdquo;. For example, Bunny-Xiangli.github.io.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;installing-git&#34;&gt;Installing Git&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;a href=&#34;https://git-scm.com/downloads/&#34;&gt;https://git-scm.com/downloads/&lt;/a&gt; to download the Git installation package for your computer.&lt;/p&gt;
+&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;A ZIP file (for example, &lt;em&gt;Git-2.30.0.2-64-bit.exe&lt;/em&gt;) is automatically downloaded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un-zip the file and install Git with default configurations.&lt;/p&gt;
+&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;You can see that &lt;strong&gt;Git Bash&lt;/strong&gt; and &lt;strong&gt;Git GUI&lt;/strong&gt; applications are installed successfully.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;configuring-ssh-key-in-github&#34;&gt;Configuring SSH key in GitHub&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Git Bash&lt;/strong&gt; application.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;ssh-keygen -t rsa -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;your-email-address&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;Two files (&lt;em&gt;id_rsa&lt;/em&gt; and &lt;em&gt;id_rsa.pub&lt;/em&gt;) are generated in the &lt;strong&gt;.ssh&lt;/strong&gt; folder under your user account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Log in to &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt; as your GitHub account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the top-right corner, select &lt;strong&gt;Settings&lt;/strong&gt; in your account drop-down menu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;SSH and GPG keys&lt;/strong&gt; on the left side panel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt;  and add the content of &lt;em&gt;id_rsa.pub&lt;/em&gt; file. For example, you can see the added SSH in the following image.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/add-ssh-key.png&#34; alt=&#34;add ssh key&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;building-up-an-online-website&#34;&gt;Building up an online website&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the folder which contains your Markdown files (for example, &lt;em&gt;D:\Hugo\bin\DocWeb\content\posts&lt;/em&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Right-click and select &lt;strong&gt;Git Bash Here&lt;/strong&gt; in the drop-down menu.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/git-bash-here.png&#34; alt=&#34;git bash here&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To link your theme with the GitHub repository, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo  --theme&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;your-github-theme --baseUrl&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://your-github-name.github.io&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo --theme&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;hugo-theme-bootstrap4-blog --baseUrl&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://bunny-xiangli.github.io/&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;public&lt;/strong&gt; folder is created under your Hugo site folder, with multiple sub-folders and files used for generating HTML.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/public-folder.png&#34; alt=&#34;public folder&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To navigate to the &lt;strong&gt;public&lt;/strong&gt; folder, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd public
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To initiate GitHub, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add your local files to GitHub repository, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To commit files in Git repository, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first commit&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the command, you can replace &lt;em&gt;first commit&lt;/em&gt; with your own descriptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To create the connection between your local and GitHub repositories , enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git remote add origin your-git-repsitory-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git remote add origin https://github.com/Bunny-Xiangli/Bunny-Xiangli.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To push your website to GitHub, enter the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git push -u  origin master 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In your GitHub repository, go to &lt;strong&gt;Settings&lt;/strong&gt; , and scroll down to find the &lt;strong&gt;GitHub Pages&lt;/strong&gt; area.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select &lt;strong&gt;Branch:master&lt;/strong&gt; in the drop-down menu and click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bunny-xiangli.github.io/github-pages-setting.png&#34; alt=&#34;github pages setting&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the website of your &lt;strong&gt;GitHub Pages&lt;/strong&gt; (for example, &lt;a href=&#34;https://bunny-xiangli.github.io/)&#34;&gt;https://bunny-xiangli.github.io/)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Expected outcome:&lt;/p&gt;
+&lt;p&gt;You can view the online website successfully.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
